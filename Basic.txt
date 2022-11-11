@@ -63,6 +63,19 @@ zowe plugins install om-spool-for-zowe-cli.tgz
 cd zowe-ubuntu 
 sudo dpkg -i ooRexx-5.0.0-12528.ubuntu1604.x86_64.deb
 
+--------
+
+File - Preferences - Keyboard shortcuts - json
+// Place your key bindings in this file to override the defaults
+[
+    {
+       "key": "ctrl+enter",
+       "command": "workbench.action.terminal.runSelectedText",
+       "when": "editorTextFocus&& editorHasSelection"
+    }
+]
+
+
 
 
 zowe config init
