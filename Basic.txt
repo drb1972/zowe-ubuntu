@@ -78,7 +78,8 @@ File - Preferences - Keyboard shortcuts - json
 ------
 #Instalar extenciones
 code --install-extension ms-vscode.remote-explorer-0.1.2022103109.vsix
-
+code --install-extension broadcomMFD.code4z-extension-pack-2.0.1.vsix
+code --install-extension broadcomMFD.lsp-for-rexx-0.0.18.vsix 
 
 zowe config init
 
