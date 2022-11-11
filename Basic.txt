@@ -10,6 +10,7 @@ adduser dr891415
 usermod -aG sudo dr891415
 su dr891415
 cd ~
+#No hace falta 
 sudo apt-get -y install git-all
 git clone https://github.com/drb1972/zowe-ubuntu.git
 cd zowe-ubuntu
