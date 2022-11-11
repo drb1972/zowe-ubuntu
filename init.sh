@@ -15,7 +15,7 @@ sudo npm install ibm_db
 sudo npm install async bluebird moment
 cd ..
 
-sudo npm install -g @zowe/cli@zowe-v2-lts
+sudo npm install -g zowe-cli.tgz
 zowe plugins install @zowe/cics-for-zowe-cli@zowe-v2-lts @zowe/db2-for-zowe-cli@zowe-v2-lts @zowe/ims-for-zowe-cli@zowe-v2-lts @zowe/mq-for-zowe-cli@zowe-v2-lts @zowe/zos-ftp-for-zowe-cli@zowe-v2-lts
 zowe plugins install @zowe/secure-credential-store-for-zowe-cli
 
