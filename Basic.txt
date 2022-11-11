@@ -75,7 +75,9 @@ File - Preferences - Keyboard shortcuts - json
     }
 ]
 
-
+------
+#Instalar extenciones
+code --install-extension ms-vscode.remote-explorer-0.1.2022103109.vsix
 
 
 zowe config init
