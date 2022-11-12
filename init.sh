@@ -50,6 +50,7 @@ echo '******************************'
 echo 'sudo mkdir nodeapp'
 echo '******************************'
 sudo mkdir nodeapp
+chmod 777 *
 echo '******************************'
 echo 'cd nodeapp'
 echo '******************************'
