@@ -1,4 +1,12 @@
 echo '******************************'
+echo 'sudo mkdir ~/.npm-global'
+echo '******************************'
+sudo mkdir ~/.npm-global
+echo '******************************'
+echo 'NPM_CONFIG_PREFIX=~/.npm-global'
+echo '******************************'
+NPM_CONFIG_PREFIX=~/.npm-global
+echo '******************************'
 echo 'sudo apt-get -y install nodejs'
 echo '******************************'
 sudo apt-get -y install nodejs
@@ -54,7 +62,6 @@ echo '******************************'
 echo 'sudo mkdir nodeapp'
 echo '******************************'
 sudo mkdir nodeapp
-sudo chmod 777 *
 echo '******************************'
 echo 'cd nodeapp'
 echo '******************************'
