@@ -1,0 +1,140 @@
+{
+    "$schema": "./zowe.schema.json",
+    "profiles": {
+        "base": {
+            "type": "base",
+            "properties": {
+                "host": "mvsde20.lvn.broadcom.net",
+                "port": 7554,
+                "rejectUnauthorized": false
+            },
+            "secure": [
+                "user",
+                "password"
+            ]
+        },
+        "de20": {
+            "profiles": {
+                "zosmf": {
+                    "type": "zosmf",
+                    "properties": {
+                        "basePath": "/ibmzosmf/api/v1"
+                    }
+                },
+                "tso": {
+                    "type": "tso",
+                    "properties": {
+                        "codePage": "1047",
+                        "logonProcedure": "IZUFPROC"
+                    }
+                },
+                "ssh": {
+                    "type": "ssh",
+                    "properties": {}
+                },
+                "ca7": {
+                    "type": "ca7",
+                    "properties": {}
+                },
+                "caspool": {
+                    "type": "caspool",
+                    "properties": {}
+                },
+                "caview": {
+                    "type": "caview",
+                    "properties": {}
+                },
+                "cics": {
+                    "type": "cics",
+                    "properties": {}
+                },
+                "db2": {
+                    "type": "db2",
+                    "properties": {}
+                },
+                "ebg": {
+                    "type": "ebg",
+                    "properties": {}
+                },
+                "endevor": {
+                    "type": "endevor",
+                    "properties": {}
+                },
+                "endevor-location": {
+                    "type": "endevor-location",
+                    "properties": {}
+                },
+                "fmp": {
+                    "type": "fmp",
+                    "properties": {}
+                },
+                "idms": {
+                    "type": "idms",
+                    "properties": {}
+                },
+                "ims": {
+                    "type": "ims",
+                    "properties": {}
+                },
+                "jclcheck": {
+                    "type": "jclcheck",
+                    "properties": {}
+                },
+                "mat": {
+                    "type": "mat",
+                    "properties": {}
+                },
+                "pma": {
+                    "type": "pma",
+                    "properties": {}
+                },
+                "mq": {
+                    "type": "mq",
+                    "properties": {}
+                },
+                "ops": {
+                    "type": "ops",
+                    "properties": {}
+                },
+                "sysview": {
+                    "type": "sysview",
+                    "properties": {}
+                },
+                "sysview-format": {
+                    "type": "sysview-format",
+                    "properties": {}
+                },
+                "zftp": {
+                    "type": "zftp",
+                    "properties": {}
+                }
+            }
+        }
+    },
+    "defaults": {
+        "zosmf": "de20.zosmf",
+        "tso": "de20.tso",
+        "ssh": "de20.ssh",
+        "ca7": "de20.ca7",
+        "caspool": "de20.caspool",
+        "caview": "de20.caview",
+        "cics": "de20.cics",
+        "db2": "de20.db2",
+        "ebg": "de20.ebg",
+        "endevor": "de20.endevor",
+        "endevor-location": "de20.endevor-location",
+        "fmp": "de20.fmp",
+        "idms": "de20.idms",
+        "ims": "de20.ims",
+        "jclcheck": "de20.jclcheck",
+        "mat": "de20.mat",
+        "pma": "de20.pma",
+        "mq": "de20.mq",
+        "ops": "de20.ops",
+        "sysview": "de20.sysview",
+        "sysview-format": "de20.sysview-format",
+        "zftp": "de20.zftp",
+        "base": "base"
+    },
+    "autoStore": true
+}

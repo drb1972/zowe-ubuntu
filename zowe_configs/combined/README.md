@@ -1,0 +1,56 @@
+This config is a combination of all of the other configs in this repository. It provides config information for services available on ca11, ca31, ca32, and tso1 as well as de20, mstr, and sr01.
+
+- ca11
+  - z/OSMF
+  - TSO
+  - SSH
+  - SYSVIEW
+  - FTP
+- ca31
+  - z/OSMF
+  - TSO
+  - SSH
+  - Db2
+  - SYSVIEW
+  - FTP
+- ca32
+  - z/OSMF
+  - TSO
+  - SSH
+  - Db2
+  - File Master Plus
+  - JCLCheck
+  - SYSVIEW
+  - FTP
+- de20
+  - z/OSMF
+  - TSO
+  - SSH
+- mstr
+  - z/OSMF
+  - TSO
+  - SSH
+  - CICS
+  - Db2
+  - Endevor
+  - File Master Plus
+  - JCLCheck
+  - OPS/MVS
+  - FTP
+- sr01
+  - z/OSMF
+  - TSO
+  - SSH
+  - CICS
+  - Db2
+  - Endevor
+  - File Master Plus
+  - JCLCheck
+  - OPS/MVS
+  - FTP
+- tso1
+  - z/OSMF
+  - TSO
+  - SSH
+  - Endevor
+  - FTP

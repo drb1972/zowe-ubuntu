@@ -1,0 +1,144 @@
+{
+    "$schema": "./zowe.schema.json",
+    "profiles": {
+        "base": {
+            "type": "base",
+            "properties": {
+                "rejectUnauthorized": false
+            }
+        },
+        "ca32": {
+            "properties": {
+                "host": "usilca32.lvn.broadcom.net",
+                "port": 7554
+            },
+            "profiles": {
+                "zosmf": {
+                    "type": "zosmf",
+                    "properties": {
+                        "basePath": "/ibmzosmf/api/v1"
+                    }
+                },
+                "tso": {
+                    "type": "tso",
+                    "properties": {
+                        "codePage": "1047",
+                        "logonProcedure": "IZUFPROC"
+                    }
+                },
+                "ssh": {
+                    "type": "ssh",
+                    "properties": {}
+                },
+                "ca7": {
+                    "type": "ca7",
+                    "properties": {}
+                },
+                "caspool": {
+                    "type": "caspool",
+                    "properties": {}
+                },
+                "caview": {
+                    "type": "caview",
+                    "properties": {}
+                },
+                "cics": {
+                    "type": "cics",
+                    "properties": {}
+                },
+                "db2": {
+                    "type": "db2",
+                    "properties": {}
+                },
+                "ebg": {
+                    "type": "ebg",
+                    "properties": {}
+                },
+                "endevor": {
+                    "type": "endevor",
+                    "properties": {}
+                },
+                "endevor-location": {
+                    "type": "endevor-location",
+                    "properties": {}
+                },
+                "fmp": {
+                    "type": "fmp",
+                    "properties": {}
+                },
+                "idms": {
+                    "type": "idms",
+                    "properties": {}
+                },
+                "ims": {
+                    "type": "ims",
+                    "properties": {}
+                },
+                "jclcheck": {
+                    "type": "jclcheck",
+                    "properties": {}
+                },
+                "mat": {
+                    "type": "mat",
+                    "properties": {}
+                },
+                "pma": {
+                    "type": "pma",
+                    "properties": {}
+                },
+                "mq": {
+                    "type": "mq",
+                    "properties": {}
+                },
+                "ops": {
+                    "type": "ops",
+                    "properties": {}
+                },
+                "sysview": {
+                    "type": "sysview",
+                    "properties": {
+                        "basePath": "/casysviewca32/api/v1"
+                    }
+                },
+                "sysview-format": {
+                    "type": "sysview-format",
+                    "properties": {}
+                },
+                "zftp": {
+                    "type": "zftp",
+                    "properties": {}
+                }
+            },
+            "secure": [
+                "user",
+                "password"
+            ]
+        }
+    },
+    "defaults": {
+        "zosmf": "ca32.zosmf",
+        "tso": "ca32.tso",
+        "ssh": "ca32.ssh",
+        "ca7": "ca32.ca7",
+        "caspool": "ca32.caspool",
+        "caview": "ca32.caview",
+        "cics": "ca32.cics",
+        "db2": "ca32.db2",
+        "ebg": "ca32.ebg",
+        "endevor": "ca32.endevor",
+        "endevor-location": "ca32.endevor-location",
+        "fmp": "ca32.fmp",
+        "idms": "ca32.idms",
+        "ims": "ca32.ims",
+        "jclcheck": "ca32.jclcheck",
+        "mat": "ca32.mat",
+        "pma": "ca32.pma",
+        "mq": "ca32.mq",
+        "ops": "ca32.ops",
+        "sysview": "ca32.sysview",
+        "sysview-format": "ca32.sysview-format",
+        "zftp": "ca32.zftp",
+        "base": "base"
+    },
+    "autoStore": true
+}

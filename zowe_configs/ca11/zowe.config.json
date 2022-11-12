@@ -1,0 +1,63 @@
+{
+    "$schema": "./zowe.schema.json",
+    "profiles": {
+        "base": {
+            "type": "base",
+            "properties": {
+                "rejectUnauthorized": false
+            },
+            "secure": [
+                "user",
+                "password"
+            ]
+        },
+        "ca11": {
+            "properties": {
+                "host": "usilca11.lvn.broadcom.net"
+            },
+            "profiles": {
+                "zosmf": {
+                    "type": "zosmf",
+                    "properties": {
+                        "port": 1443
+                    }
+                },
+                "tso": {
+                    "type": "tso",
+                    "properties": {
+                        "codePage": "1047",
+                        "logonProcedure": "IZUFPROC"
+                    }
+                },
+                "ssh": {
+                    "type": "ssh",
+                    "properties": {
+                        "port": 22
+                    }
+                },
+                "sysview": {
+                    "type": "sysview",
+                    "properties": {
+                        "port": 8081
+                    }
+                },
+                "zftp": {
+                    "type": "zftp",
+                    "properties": {
+                        "port": 21,
+                        "secureFtp": false
+                    }
+                }
+            }
+        }
+    },
+    "defaults": {
+        "zosmf": "ca11.zosmf",
+        "tso": "ca11.tso",
+        "ssh": "ca11.ssh",
+        "sysview": "ca11.sysview",
+        "zftp": "ca11.zftp",
+        "base": "base"
+    },
+    "autoStore": true
+}

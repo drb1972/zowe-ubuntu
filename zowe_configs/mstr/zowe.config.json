@@ -1,0 +1,125 @@
+{
+    "$schema": "./zowe.schema.json",
+    "profiles": {
+        "base": {
+            "type": "base",
+            "properties": {
+                "rejectUnauthorized": false
+            },
+            "secure": [
+                "user",
+                "password"
+            ]
+        },
+        "marbles": {
+            "type": "endevor-location",
+            "properties": {
+                "instance": "ENDEVOR",
+                "environment": "DEV",
+                "system": "MARBLES",
+                "subsystem": "MARBLES"
+            }
+        },
+        "slick": {
+            "type": "endevor-location",
+            "properties": {
+                "instance": "ENDEVOR",
+                "environment": "DEV",
+                "system": "SLICK",
+                "subsystem": "SLICK"
+            }
+        },
+        "mstr": {
+            "properties": {
+                "host": "mstrbrs.lvn.broadcom.net"
+            },
+            "profiles": {
+                "zosmf": {
+                    "type": "zosmf",
+                    "properties": {
+                        "port": 443
+                    }
+                },
+                "tso": {
+                    "type": "tso",
+                    "properties": {
+                        "codePage": "1047",
+                        "logonProcedure": "IZUFPROC"
+                    }
+                },
+                "ssh": {
+                    "type": "ssh",
+                    "properties": {
+                        "port": 22
+                    }
+                },
+                "cics": {
+                    "type": "cics",
+                    "properties": {
+                        "port": 6000,
+                        "protocol": "https",
+                        "regionName": "CICSTRN1"
+                    }
+                },
+                "db2": {
+                    "type": "db2",
+                    "properties": {
+                        "port": 6017,
+                        "database": "D10CPTIB"
+                    }
+                },
+                "endevor": {
+                    "type": "endevor",
+                    "properties": {
+                        "port": 6032,
+                        "protocol": "https"
+                    }
+                },
+                "fmp": {
+                    "type": "fmp",
+                    "properties": {
+                        "port": 6001,
+                        "protocol": "https"
+                    }
+                },
+                "jclcheck": {
+                    "type": "jclcheck",
+                    "properties": {
+                        "port": "6028",
+                        "jclcheckOptions": "NOAS NOAU NOHCD NOJCL NORES NOSIGN",
+                        "protocol": "https"
+                    }
+                },
+                "ops": {
+                    "type": "ops",
+                    "properties": {
+                        "port": 6007,
+                        "protocol": "https"
+                    }
+                },
+                "zftp": {
+                    "type": "zftp",
+                    "properties": {
+                        "port": 21,
+                        "secureFtp": false
+                    }
+                }
+            }
+        }
+    },
+    "defaults": {
+        "zosmf": "mstr.zosmf",
+        "tso": "mstr.tso",
+        "ssh": "mstr.ssh",
+        "cics": "mstr.cics",
+        "db2": "mstr.db2",
+        "endevor": "mstr.endevor",
+        "endevor-location": "marbles",
+        "fmp": "mstr.fmp",
+        "jclcheck": "mstr.jclcheck",
+        "ops": "mstr.ops",
+        "zftp": "mstr.zftp",
+        "base": "base"
+    },
+    "autoStore": true
+}

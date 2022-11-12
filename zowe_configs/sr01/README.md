@@ -1,0 +1,11 @@
+The following services are available on this LPAR:
+ - z/OSMF
+ - TSO
+ - SSH
+ - CICS
+ - Db2
+ - Endevor
+ - File Master Plus
+ - JCLCheck
+ - OPS/MVS
+ - FTP

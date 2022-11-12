@@ -1,0 +1,48 @@
+{
+    "$schema": "./zowe.schema.json",
+    "profiles": {
+        "base": {
+            "type": "base",
+            "properties": {
+                "rejectUnauthorized": false
+            },
+            "secure": [
+                "user",
+                "password"
+            ]
+        },
+        "de20": {
+            "properties": {
+                "host": "mvsde20.lvn.broadcom.net"
+            },
+            "profiles": {
+                "zosmf": {
+                    "type": "zosmf",
+                    "properties": {
+                        "port": 449
+                    }
+                },
+                "tso": {
+                    "type": "tso",
+                    "properties": {
+                        "codePage": "1047",
+                        "logonProcedure": "IZUFPROC"
+                    }
+                },
+                "ssh": {
+                    "type": "ssh",
+                    "properties": {
+                        "port": 22
+                    }
+                }
+            }
+        }
+    },
+    "defaults": {
+        "zosmf": "de20.zosmf",
+        "tso": "de20.tso",
+        "ssh": "de20.ssh",
+        "base": "base"
+    },
+    "autoStore": true
+}

@@ -1,0 +1,84 @@
+{
+    "$schema": "./zowe.schema.json",
+    "profiles": {
+        "base": {
+            "type": "base",
+            "properties": {
+                "rejectUnauthorized": false
+            },
+            "secure": [
+                "user",
+                "password"
+            ]
+        },
+        "ca32": {
+            "properties": {
+                "host": "usilca32.lvn.broadcom.net"
+            },
+            "profiles": {
+                "zosmf": {
+                    "type": "zosmf",
+                    "properties": {
+                        "port": 1443
+                    }
+                },
+                "tso": {
+                    "type": "tso",
+                    "properties": {
+                        "codePage": "1047",
+                        "logonProcedure": "IZUFPROC"
+                    }
+                },
+                "ssh": {
+                    "type": "ssh",
+                    "properties": {
+                        "port": 22
+                    }
+                },
+                "db2": {
+                    "type": "db2",
+                    "properties": {
+                        "database": "DH0GPTIB",
+                        "port": 5261
+                    }
+                },
+                "fmp": {
+                    "type": "fmp",
+                    "properties": {
+                        "port": 51914,
+                        "protocol": "http"
+                    }
+                },
+                "jclcheck": {
+                    "type": "jclcheck",
+                    "properties": {
+                        "port": 10193
+                    }
+                },
+                "sysview": {
+                    "type": "sysview",
+                    "properties": {
+                        "port": 8081
+                    }
+                },
+                "zftp": {
+                    "type": "zftp",
+                    "properties": {
+                        "port": 21,
+                        "secureFtp": false
+                    }
+                }
+            }
+        }
+    },
+    "defaults": {
+        "zosmf": "ca32.zosmf",
+        "tso": "ca32.tso",
+        "ssh": "ca32.ssh",
+        "db2": "ca32.db2",
+        "sysview": "ca32.sysview",
+        "zftp": "ca32.zftp",
+        "base": "base"
+    },
+    "autoStore": true
+}
