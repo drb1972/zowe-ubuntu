@@ -4,9 +4,6 @@ apt-get install -y nodejs
 npm install -g npm@9.1.1
 apt-get update
 
-
-
-
 npm install -g prebuild-install
 echo '******************************'
 echo 'sudo apt-get install -y gnome-keyring'
@@ -43,6 +40,15 @@ echo '******************************'
 echo 'sudo dpkg -i ooRexx-5.0.0-12528.ubuntu1604.x86_64.deb'
 echo '******************************'
 dpkg -i ooRexx-5.0.0-12528.ubuntu1604.x86_64.deb
+
+echo '******************************'
+echo 'npm install -g node-gyp'
+echo '******************************'
+npm install -g node-gyp
+echo '******************************'
+echo 'apt-get install python3 make g++'
+echo '******************************'
+apt-get install python3 make g++
 
 npm install -g @zowe/cli@zowe-v2-lts
 zowe plugins install @zowe/cics-for-zowe-cli@zowe-v2-lts @zowe/db2-for-zowe-cli@zowe-v2-lts @zowe/ims-for-zowe-cli@zowe-v2-lts @zowe/mq-for-zowe-cli@zowe-v2-lts @zowe/zos-ftp-for-zowe-cli@zowe-v2-lts
