@@ -34,7 +34,7 @@ sudo apt -y autoremove
 echo '******************************'
 echo 'export $(dbus-launch)'
 echo '******************************'
-sudo export $(dbus-launch)
+sudo apt install dbus-x11
 echo '******************************'
 echo '# Pulsar Control-D'
 echo '******************************'
@@ -58,7 +58,7 @@ sudo chmod 777 *
 echo '******************************'
 echo 'cd nodeapp'
 echo '******************************'
-sudo cd nodeapp
+cd nodeapp
 echo '******************************'
 echo 'sudo npm install ibm_db'
 echo '******************************'
