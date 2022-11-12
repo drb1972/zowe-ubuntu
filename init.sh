@@ -75,6 +75,6 @@ code --install-extension broadcomMFD.bridge-for-git-explorer-0.3.0.vsix
 cp ./zowe_configs/sr01/zowe.config.json /root/.zowe/
 cp ./zowe_configs/sr01/zowe.schema.json /root/.zowe/
 echo 'default LPAR = SR01 Enter user/pwd (cust002)'
-zowe config secure -g
+zowe config secure --gc
 
 mkdir /root/projects/
