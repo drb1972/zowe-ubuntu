@@ -5,12 +5,12 @@ sudo apt-get -y install nodejs
 echo '******************************'
 echo 'sudo apt-get update'
 echo '******************************'
-apt-get update
+sudo apt-get update
 echo '******************************'
 echo 'sudo apt-get -y install npm'
 echo '******************************'
 sudo apt-get -y install npm
-apt-get update
+sudo apt-get update
 echo '******************************'
 echo 'sudo npm install -g n'
 echo '******************************'
@@ -27,6 +27,10 @@ echo '******************************'
 echo 'sudo apt-get -y install libsecret-1-0'
 echo '******************************'
 sudo apt-get install -y libsecret-1-0
+echo '******************************'
+echo 'sudo apt autoremove'
+echo '******************************'
+sudo apt autoremove
 echo '******************************'
 echo 'export $(dbus-launch)'
 echo '******************************'
@@ -45,16 +49,16 @@ sudo apt-get install -y libpam-gnome-keyring
 echo '******************************'
 echo 'sudo apt-get update'
 echo '******************************'
-apt-get update
+sudo apt-get update
 echo '******************************'
 echo 'sudo mkdir nodeapp'
 echo '******************************'
 sudo mkdir nodeapp
-chmod 777 *
+sudo chmod 777 *
 echo '******************************'
 echo 'cd nodeapp'
 echo '******************************'
-cd nodeapp
+sudo cd nodeapp
 echo '******************************'
 echo 'sudo npm install ibm_db'
 echo '******************************'
