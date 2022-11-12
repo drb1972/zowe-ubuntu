@@ -1,3 +1,4 @@
+# installar desde /
 # apt-get install -y nodejs
 # apt-get -y install npm
 
@@ -76,5 +77,10 @@ cp ./zowe_configs/sr01/zowe.config.json /root/.zowe/
 cp ./zowe_configs/sr01/zowe.schema.json /root/.zowe/
 echo 'default LPAR = SR01 Enter user/pwd (cust002)'
 zowe config secure --gc
-
+zowe files list ds 'cust002.*' 
 mkdir /root/projects/
+mv /etc/pam.d/sshd /etc/pam.d/sshd.bak
+cp sshd /etc/pam.d/sshd
+mv /root/.bashrc /root/.basrc.bak
+cp .bashrc /root/.bashrc
+
