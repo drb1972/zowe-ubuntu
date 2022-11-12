@@ -30,7 +30,7 @@ sudo apt-get install -y libsecret-1-0
 echo '******************************'
 echo 'sudo apt autoremove'
 echo '******************************'
-sudo apt autoremove
+sudo apt -y autoremove
 echo '******************************'
 echo 'export $(dbus-launch)'
 echo '******************************'
