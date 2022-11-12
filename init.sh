@@ -1,5 +1,10 @@
+# apt-get install -y nodejs
+# apt-get -y install npm
+
+curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash
 apt-get install -y nodejs
-apt-get -y install npm
+npm install -g npm@9.1.1
+apt-get update
 
 echo '******************************'
 echo 'sudo apt-get install -y gnome-keyring'
