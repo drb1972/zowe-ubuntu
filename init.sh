@@ -52,6 +52,12 @@ echo 'apt-get install python3 make g++'
 echo '******************************'
 apt-get install -y python3 make g++
 
+mkdir /root/projects/
+mv /etc/pam.d/sshd /etc/pam.d/sshd.bak
+cp sshd /etc/pam.d/sshd
+mv /root/.bashrc /root/.basrc.bak
+cp .bashrc /root/.bashrc
+
 npm install -g @zowe/cli@zowe-v2-lts
 zowe plugins install @zowe/cics-for-zowe-cli@zowe-v2-lts @zowe/db2-for-zowe-cli@zowe-v2-lts @zowe/ims-for-zowe-cli@zowe-v2-lts @zowe/mq-for-zowe-cli@zowe-v2-lts @zowe/zos-ftp-for-zowe-cli@zowe-v2-lts
 zowe plugins install @zowe/secure-credential-store-for-zowe-cli
@@ -78,9 +84,3 @@ cp ./zowe_configs/sr01/zowe.schema.json /root/.zowe/
 echo 'default LPAR = SR01 Enter user/pwd (cust002)'
 zowe config secure --gc
 zowe files list ds 'cust002.*' 
-mkdir /root/projects/
-mv /etc/pam.d/sshd /etc/pam.d/sshd.bak
-cp sshd /etc/pam.d/sshd
-mv /root/.bashrc /root/.basrc.bak
-cp .bashrc /root/.bashrc
-
