@@ -83,4 +83,4 @@ cp ./zowe_configs/sr01/zowe.config.json /root/.zowe/
 cp ./zowe_configs/sr01/zowe.schema.json /root/.zowe/
 echo 'default LPAR = SR01 Enter user/pwd (cust002)'
 zowe config secure --gc
-zowe files list ds 'cust002.*' 
+reboot
