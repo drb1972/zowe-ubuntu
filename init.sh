@@ -75,10 +75,10 @@ zowe plugins install @broadcom/caview-for-zowe-cli@zowe-v2-lts
 
 zowe plugins install microfocus-zmf-cli-plugin-2.0.2.tgz
 
-code --install-extension broadcomMFD.code4z-extension-pack
-code --install-extension broadcomMFD.lsp-for-rexx
-code --install-extension broadcomMFD.data-editor-for-mainframe
-code --install-extension broadcomMFD.bridge-for-git-explorer
+code --install-extension broadcomMFD.code4z-extension-pack --force
+code --install-extension broadcomMFD.lsp-for-rexx --force
+code --install-extension broadcomMFD.data-editor-for-mainframe --force
+code --install-extension broadcomMFD.bridge-for-git-explorer --force
 
 cp ./zowe_configs/sr01/zowe.config.json /root/.zowe/
 cp ./zowe_configs/sr01/zowe.schema.json /root/.zowe/
