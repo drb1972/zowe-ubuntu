@@ -69,7 +69,7 @@ zowe plugins install @broadcom/file-master-plus-for-zowe-cli@zowe-v2-lts
 zowe plugins install @broadcom/mat-analyze-for-zowe-cli@zowe-v2-lts
 zowe plugins install @broadcom/mat-detect-for-zowe-cli@zowe-v2-lts
 zowe plugins install @broadcom/ops-for-zowe-cli@zowe-v2-lts
-zowe plugins install @broadcom/om-spool-for-zowe-cli@zowe-v2-lts
+#zowe plugins install @broadcom/om-spool-for-zowe-cli@zowe-v2-lts
 zowe plugins install @broadcom/sysview-for-zowe-cli@zowe-v2-lts
 zowe plugins install @broadcom/caview-for-zowe-cli@zowe-v2-lts
 
