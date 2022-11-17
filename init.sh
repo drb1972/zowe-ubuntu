@@ -82,6 +82,4 @@ code --install-extension broadcomMFD.bridge-for-git-explorer --force
 
 cp ./zowe_configs/sr01/zowe.config.json /root/.zowe/
 cp ./zowe_configs/sr01/zowe.schema.json /root/.zowe/
-echo 'default LPAR = SR01 Enter user/pwd (cust002)'
-zowe config secure --gc
-reboot
+echo 'to use zowe, reboot and issue zowe config secure --gc'

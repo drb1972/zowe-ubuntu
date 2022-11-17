@@ -70,7 +70,7 @@ zowe plugins install endevor-bridge-for-git-for-zowe-cli.tgz
 zowe plugins install mat-analyze-for-zowe-cli.tgz
 zowe plugins install om-spool-for-zowe-cli.tgz
 
-
+zowe config secure --gc 
 
 #Install ooRexx 
 cd zowe-ubuntu 
