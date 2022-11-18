@@ -1,3 +1,4 @@
+# curl -sSL https://raw.githubusercontent.com/drb1972/zowe-ubuntu/v2/init.sh |  bash 
 # installar desde /
 # apt-get install -y nodejs
 # apt-get -y install npm
