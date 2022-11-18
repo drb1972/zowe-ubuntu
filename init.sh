@@ -52,11 +52,25 @@ echo 'apt-get install python3 make g++'
 echo '******************************'
 apt-get install -y python3 make g++
 
-mkdir /root/projects/
-mv /etc/pam.d/sshd /etc/pam.d/sshd.bak
-cp sshd /etc/pam.d/sshd
-mv /root/.bashrc /root/.basrc.bak
-cp .bashrc /root/.bashrc
+echo '******************************'
+echo 'update etc/pam.d/sshd'
+echo '******************************'
+#
+cp -r /etc/pam.d/sshd /etc/pam.d/sshd.bak
+echo '# Included Diego' >> /etc/pam.d/sshd
+echo 'session optional pam_gnome_keyring.so auto_start' >> /etc/pam.d/sshd
+echo '# Included Diego' >> /etc/pam.d/sshd
+echo 'auth optional pam_gnome_keyring.so' >> /etc/pam.d/sshd
+#
+echo '******************************'
+echo 'update root/.bashrc'
+echo '******************************'
+cp -r /root/.bashrc /root/.bashrc.bak
+echo '# Included Diego' >> /root/.bashrc
+echo 'if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then' >> /root/.bashrc
+echo 'exec dbus-run-session -- $SHELL' >> /root/.bashrc
+echo 'fi' >> /root/.bashrc
+echo 'gnome-keyring-daemon --start --components=secrets' >> /root/.bashrc
 
 npm install -g @zowe/cli@zowe-v2-lts
 zowe plugins install @zowe/cics-for-zowe-cli@zowe-v2-lts @zowe/db2-for-zowe-cli@zowe-v2-lts @zowe/ims-for-zowe-cli@zowe-v2-lts @zowe/mq-for-zowe-cli@zowe-v2-lts @zowe/zos-ftp-for-zowe-cli@zowe-v2-lts
