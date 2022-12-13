@@ -74,26 +74,26 @@ echo 'fi' >> /root/.bashrc
 echo 'gnome-keyring-daemon --start --components=secrets' >> /root/.bashrc
 
 npm install -g @zowe/cli@zowe-v2-lts
-# zowe plugins install @zowe/cics-for-zowe-cli@zowe-v2-lts 
-# zowe plugins install @zowe/db2-for-zowe-cli@zowe-v2-lts 
-# zowe plugins install @zowe/ims-for-zowe-cli@zowe-v2-lts
-# zowe plugins install @zowe/mq-for-zowe-cli@zowe-v2-lts
-# zowe plugins install @zowe/zos-ftp-for-zowe-cli@zowe-v2-lts
-# zowe plugins install @zowe/secure-credential-store-for-zowe-cli
-zowe plugins install @zowe/secure-credential-store-for-zowe-cli@4.1.0
+zowe plugins install @zowe/cics-for-zowe-cli@zowe-v2-lts 
+zowe plugins install @zowe/db2-for-zowe-cli@zowe-v2-lts 
+zowe plugins install @zowe/ims-for-zowe-cli@zowe-v2-lts
+zowe plugins install @zowe/mq-for-zowe-cli@zowe-v2-lts
+zowe plugins install @zowe/zos-ftp-for-zowe-cli@zowe-v2-lts
+zowe plugins install @zowe/secure-credential-store-for-zowe-cli
+# zowe plugins install @zowe/secure-credential-store-for-zowe-cli@4.1.0
 
-# zowe plugins install @broadcom/ca7-for-zowe-cli@zowe-v2-lts
-# zowe plugins install @broadcom/endevor-for-zowe-cli@zowe-v2-lts
-# zowe plugins install @broadcom/endevor-bridge-for-git-for-zowe-cli@zowe-v2-lts
-# zowe plugins install @broadcom/file-master-plus-for-zowe-cli@zowe-v2-lts
-# zowe plugins install @broadcom/mat-analyze-for-zowe-cli@zowe-v2-lts
-# zowe plugins install @broadcom/mat-detect-for-zowe-cli@zowe-v2-lts
-# zowe plugins install @broadcom/ops-for-zowe-cli@zowe-v2-lts
-# zowe plugins install @broadcom/om-spool-for-zowe-cli@zowe-v2-lts
-# zowe plugins install @broadcom/sysview-for-zowe-cli@zowe-v2-lts
-# zowe plugins install @broadcom/caview-for-zowe-cli@zowe-v2-lts
+zowe plugins install @broadcom/ca7-for-zowe-cli@zowe-v2-lts
+zowe plugins install @broadcom/endevor-for-zowe-cli@zowe-v2-lts
+zowe plugins install @broadcom/endevor-bridge-for-git-for-zowe-cli@zowe-v2-lts
+zowe plugins install @broadcom/file-master-plus-for-zowe-cli@zowe-v2-lts
+zowe plugins install @broadcom/mat-analyze-for-zowe-cli@zowe-v2-lts
+zowe plugins install @broadcom/mat-detect-for-zowe-cli@zowe-v2-lts
+zowe plugins install @broadcom/ops-for-zowe-cli@zowe-v2-lts
+zowe plugins install @broadcom/om-spool-for-zowe-cli@zowe-v2-lts
+zowe plugins install @broadcom/sysview-for-zowe-cli@zowe-v2-lts
+zowe plugins install @broadcom/caview-for-zowe-cli@zowe-v2-lts
 
-# zowe plugins install microfocus-zmf-cli-plugin-2.0.2.tgz
+zowe plugins install microfocus-zmf-cli-plugin-2.0.2.tgz
 
 code --install-extension broadcomMFD.code4z-extension-pack --force
 code --install-extension broadcomMFD.lsp-for-rexx --force
